@@ -5,7 +5,7 @@ let gameover = false;
 
 // function to change turn
 const changeTurn = ()=>{
-    return turn === "X"?"0":"X"
+    return turn === "X"?"O":"X"
 }
 
 // Function to check for win
@@ -64,11 +64,11 @@ function handleclick(el){
     el.innerText = turn
     if(turn === 'X'){
         
-        el.style.color = "red"
+        el.style.color = "#CA4E4C"
     }
     else{
         
-        el.style.color = "blue"
+        el.style.color = "#3EC5F3"
     }
     checkwin();
     if(!gameover){
